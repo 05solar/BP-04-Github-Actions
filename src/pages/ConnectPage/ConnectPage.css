@@ -1,0 +1,81 @@
+.connect-page {
+  align-items: center;
+  background: radial-gradient(circle at 75% 35%, #57121b, #141414 52%);
+  display: flex;
+  min-height: 100vh;
+  padding: 32px;
+}
+.connect-page__panel {
+  max-width: 580px;
+}
+.connect-page p {
+  color: var(--color-red);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.connect-page h1 {
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1.05;
+  margin: 12px 0 32px;
+}
+.connect-page label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.connect-page form div {
+  display: flex;
+  max-width: 560px;
+}
+.connect-page input {
+  background: #333;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px 0 0 4px;
+  color: #fff;
+  flex: 1;
+  font-size: 16px;
+  min-height: 52px;
+  padding: 0 16px;
+}
+.connect-page button {
+  background: var(--color-red);
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 24px;
+}
+.connect-page small {
+  color: var(--color-text-secondary);
+  display: block;
+  margin-top: 12px;
+}
+.connect-page__error {
+  color: #ff8a8a;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 12px 0 0;
+}
+.connect-page button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+@media (max-width: 499px) {
+  .connect-page {
+    padding: 20px;
+  }
+  .connect-page form div {
+    display: block;
+  }
+  .connect-page input,
+  .connect-page button {
+    border-radius: 4px;
+    width: 100%;
+  }
+  .connect-page button {
+    margin-top: 8px;
+    min-height: 48px;
+  }
+}

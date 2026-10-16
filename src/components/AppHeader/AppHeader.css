@@ -1,0 +1,127 @@
+.app-header {
+  align-items: center;
+  background: linear-gradient(#141414, transparent);
+  display: flex;
+  gap: 30px;
+  height: 68px;
+  left: 0;
+  padding: 0 4%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: background 0.25s;
+  z-index: 10;
+}
+.app-header--scrolled {
+  background: #141414;
+}
+.app-header__brand {
+  color: var(--color-red);
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: -1.4px;
+  text-decoration: none;
+}
+.app-header__nav {
+  display: flex;
+  gap: 21px;
+}
+.app-header__link {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.app-header__link:hover,
+.app-header__link--active {
+  color: #fff;
+}
+.app-header__actions {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+  margin-left: auto;
+}
+
+.app-header__search {
+  align-items: center;
+  background: rgba(20, 20, 20, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  display: flex;
+  height: 36px;
+}
+
+.app-header__search input {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 13px;
+  height: 100%;
+  min-width: 210px;
+  outline: 0;
+  padding: 0 9px;
+}
+
+.app-header__search input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.app-header__search button {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 19px;
+  height: 100%;
+  min-width: 36px;
+}
+.app-header__icon {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  min-height: 44px;
+  min-width: 44px;
+}
+.app-header__avatar {
+  align-items: center;
+  background: linear-gradient(135deg, #77101b, #e50914);
+  border-radius: var(--radius-sm);
+  display: flex;
+  font-size: 13px;
+  font-weight: 800;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+@media (max-width: 499px) {
+  .app-header {
+    flex-wrap: wrap;
+    gap: 12px;
+    height: auto;
+    min-height: 58px;
+    padding: 8px 16px;
+  }
+  .app-header__brand {
+    font-size: 22px;
+  }
+  .app-header__nav {
+    justify-content: space-between;
+    order: 3;
+    width: 100%;
+  }
+  .app-header__actions {
+    gap: 0;
+  }
+
+  .app-header__search {
+    flex: 1;
+  }
+
+  .app-header__search input {
+    min-width: 0;
+    width: 100%;
+  }
+  .app-header__avatar {
+    display: none;
+  }
+}

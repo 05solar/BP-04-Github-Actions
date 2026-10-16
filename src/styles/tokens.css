@@ -1,0 +1,16 @@
+:root {
+  --color-background: #141414;
+  --color-surface: #1f1f1f;
+  --color-surface-elevated: #2d2d2d;
+  --color-red: #e50914;
+  --color-red-dark: #831010;
+  --color-red-muted: #b20710;
+  --color-text: #ffffff;
+  --color-text-secondary: #bcbcbc;
+  --color-text-muted: #808080;
+  --color-match: #46d369;
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.7);
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --font-interface: "Netflix Sans", Arial, Helvetica, sans-serif;
+}

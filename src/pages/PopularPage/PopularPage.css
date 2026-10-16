@@ -1,0 +1,95 @@
+.popular-page {
+  background: var(--color-background);
+  min-height: 100vh;
+  padding-top: 112px;
+}
+.popular-page__content {
+  min-height: 70vh;
+}
+.popular-page__heading {
+  margin: 0 4% 32px;
+}
+.popular-page__heading p {
+  color: var(--color-red);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 10px;
+}
+.popular-page__heading h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+.popular-page__heading span,
+.popular-page__state {
+  color: var(--color-text-secondary);
+  font-size: 15px;
+}
+.popular-page__state {
+  margin: 12px 4% 50px;
+  text-align: center;
+}
+.popular-page__state--error {
+  color: #ff8a8a;
+}
+.popular-page__error {
+  margin: 12px 4% 50px;
+  text-align: center;
+}
+.popular-page__error .popular-page__state {
+  margin: 0 0 12px;
+}
+.popular-page__error button {
+  background: rgba(109, 109, 110, 0.7);
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  min-height: 44px;
+  padding: 0 18px;
+}
+
+.popular-page__pagination {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: -40px 4% 52px;
+}
+.popular-page__pagination button {
+  background: rgba(109, 109, 110, 0.7);
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  min-height: 44px;
+  min-width: 92px;
+  padding: 0 20px;
+}
+.popular-page__pagination button:not(:disabled):hover {
+  background: #fff;
+  color: #141414;
+}
+.popular-page__pagination button:disabled {
+  opacity: 0.4;
+}
+.popular-page__pagination span {
+  color: #fff;
+  font-size: 14px;
+  min-width: 90px;
+  text-align: center;
+}
+@media (max-width: 499px) {
+  .popular-page {
+    padding-top: 112px;
+  }
+  .popular-page__heading,
+  .popular-page__state {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .popular-page__heading h1 {
+    font-size: 30px;
+  }
+}
